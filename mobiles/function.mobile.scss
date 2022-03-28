@@ -1,0 +1,19 @@
+@media all and (min-width: 1280px) {
+  .functionContainer {
+    height: 250px;
+    padding-top: 20px;
+
+    .functionWrapper {
+      .functioItemContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .functioItem {
+          width: 30%;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
