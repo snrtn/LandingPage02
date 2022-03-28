@@ -1,0 +1,21 @@
+@media all and (min-width: 1280px) {
+  .functionContainer {
+    height: 250px;
+    padding-top: 20px;
+  }
+  .functionContainer .functionWrapper .functioItemContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .functionContainer .functionWrapper .functioItemContainer .functioItem {
+    width: 30%;
+    margin-bottom: 0px;
+  }
+}
