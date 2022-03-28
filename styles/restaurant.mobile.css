@@ -1,0 +1,57 @@
+@media all and (min-width: 1280px) {
+  .restaurantContainer .restaurantWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer .restaurantItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+  }
+}
+
+@media all and (min-width: 1380px) {
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer {
+    gap: 5px;
+  }
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem {
+    width: 350px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer {
+    gap: 10px;
+  }
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem {
+    width: 550px;
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 1570px) {
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer {
+    gap: 20px;
+  }
+  .restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem {
+    width: 620px;
+    height: 400px;
+  }
+}

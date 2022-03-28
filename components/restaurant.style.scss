@@ -1,0 +1,103 @@
+.restaurantContainer {
+  height: 100%;
+  background-color: var(--color-moinwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 55px 0px;
+
+  .restaurantWrapper {
+    width: 80%;
+    margin-left: -8px;
+    .restaurantNameTag {
+      .restaurantTitle {
+        font-weight: bold;
+        font-size: var(--m24px);
+      }
+    }
+    .restaurantItemContainer {
+      a {
+        &:nth-child(1) .restaurantItemImage {
+          background-image: url("../images/La-palette-du-gout.jpg");
+        }
+        &:nth-child(2) .restaurantItemImage {
+          background-image: url("../images/La-note-enchantee.jpg");
+        }
+        &:nth-child(3) .restaurantItemImage {
+          background-image: url("../images/a-la-francaise.jpg");
+        }
+        &:nth-child(4) .restaurantItemImage {
+          background-image: url("../images/Le-delice-des-sens.jpg");
+        }
+        margin-top: 20px;
+
+        .restaurantItem {
+          background-color: var(--color-white);
+          border-radius: 12px;
+          height: 220px;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          cursor: pointer;
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+          &:hover {
+            box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+          }
+
+          .restaurantItemImage {
+            width: 100%;
+            height: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            .newTag {
+              width: 100px;
+              padding: 8px 12px;
+              text-align: center;
+              background-color: var(--color-tertiaire);
+              font-size: var(--d16px);
+              border-radius: 3px;
+              font-weight: 400;
+              position: absolute;
+              top: 5%;
+              right: 3%;
+            }
+          }
+          .restaurantItemInfo {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 15px;
+            .restaurantItemText {
+              .restaurantItemTitle {
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+              .restaurantItemDesc {
+                font-weight: 300px;
+              }
+            }
+            .restaurantItemHeart {
+              display: flex;
+              align-items: center;
+              .fa-heart {
+                font-size: var(--m24px);
+                font-weight: 100;
+                cursor: pointer;
+                &:hover {
+                  font-weight: 800;
+                  background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
