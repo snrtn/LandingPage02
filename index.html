@@ -2,7 +2,37 @@
 <html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Ohmyfood</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- variables -->
+    <link rel="stylesheet" href="/styles/variables.css" />
+
+    <!-- globalStyle -->
+    <link rel="stylesheet" href="/styles/globalStyle.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/styles/header.style.css" />
+    <link rel="stylesheet" href="/styles/footer.style.css" />
+
+    <!-- mobiles -->
+    <link rel="stylesheet" href="/styles/footer.mobile.css" />
+
+    <!-- modules -->
+    <script src="/modules/include.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- components -->
+    <div data-include-path="/components/header.html"></div>
+    <div data-include-path="/components/footer.html"></div>
+  </body>
 </html>

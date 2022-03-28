@@ -1,0 +1,39 @@
+.footerContainer {
+  height: 200px;
+  color: white;
+  background-color: #333;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  .footerWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10vw;
+  }
+  .footerTitle {
+    .footerTitleAnchor {
+      font-family: "Shrikhand", cursive;
+      color: white;
+    }
+  }
+  .footerItemList {
+    margin-top: 10px;
+    .footerItem {
+      margin-bottom: 8px;
+      .fas {
+        width: 14px;
+        height: 14px;
+        font-size: var(--d14px);
+        margin-right: 10px;
+      }
+      .footerItemAnchor {
+        color: white;
+      }
+      .footerItemEmail {
+        color: white;
+      }
+    }
+  }
+}
