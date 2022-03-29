@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="./styles/restaurant.style.css" />
     <link rel="stylesheet" href="./styles/footer.style.css" />
 
+    <!-- Loding -->
+    <link rel="stylesheet" href="./styles/loding.style.css" />
+
     <!-- mobiles -->
     <link rel="stylesheet" href="./styles/reserve.mobile.css" />
     <link rel="stylesheet" href="./styles/function.mobile.css" />
@@ -35,12 +38,16 @@
     <script src="./modules/include.js" defer></script>
   </head>
   <body>
+    <!-- Loding -->
+    <div data-include-path="./modules/loding.html"></div>
     <!-- components -->
-    <div data-include-path="./components/header.html"></div>
-    <div data-include-path="./components/search.html"></div>
-    <div data-include-path="./components/reserve.html"></div>
-    <div data-include-path="./components/function.html"></div>
-    <div data-include-path="./components/restaurant.html"></div>
-    <div data-include-path="./components/footer.html"></div>
+    <div class="views">
+      <div data-include-path="./components/header.html"></div>
+      <div data-include-path="./components/search.html"></div>
+      <div data-include-path="./components/reserve.html"></div>
+      <div data-include-path="./components/function.html"></div>
+      <div data-include-path="./components/restaurant.html"></div>
+      <div data-include-path="./components/footer.html"></div>
+    </div>
   </body>
 </html>
