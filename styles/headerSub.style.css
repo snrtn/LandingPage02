@@ -1,4 +1,4 @@
-.headerContainer {
+.headerSubContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,14 +8,50 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 85px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   margin-bottom: 5px;
   background-color: var(--color-white);
 }
 
-.headerContainer .headerWarpper {
+.headerSubContainer .headerSubWarpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 85px;
+}
+
+.headerSubContainer .headerSubWarpper .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerSubContainer .headerSubWarpper .left a {
+  margin-left: 2rem;
+}
+
+.headerSubContainer .headerSubWarpper .left a .fa {
+  font-size: var(--d30px);
+  color: var(--color-black);
+}
+
+.headerSubContainer .headerSubWarpper .center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,11 +63,18 @@
           align-items: center;
 }
 
-.headerContainer .headerWarpper .headerLogo {
+.headerSubContainer .headerSubWarpper .center .headerSubLogo {
   width: 185px;
   height: 30px;
   background-image: url("../images/ohmyfood.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.headerSubContainer .headerSubWarpper .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 85px;
 }
