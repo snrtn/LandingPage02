@@ -1,11 +1,11 @@
-.searchContainer {
+.search {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 65px;
   background-color: var(--color-deepwhite);
 
-  .searchWarpper {
+  &__Warpper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,13 +15,13 @@
       font-size: 20px;
       margin-right: 15px;
     }
+  }
 
-    .searchInput {
-      border: none;
-      font-size: 20px;
-      width: 150px;
-      background-color: transparent;
-      font-weight: 500;
-    }
+  &__Input {
+    border: none;
+    font-size: 20px;
+    width: 150px;
+    background-color: transparent;
+    font-weight: 500;
   }
 }

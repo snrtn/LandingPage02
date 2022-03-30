@@ -1,4 +1,4 @@
-.headerSubContainer {
+.headerSub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +14,7 @@
   background-color: var(--color-white);
 }
 
-.headerSubContainer .headerSubWarpper {
+.headerSub__Warpper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +25,7 @@
   height: 85px;
 }
 
-.headerSubContainer .headerSubWarpper .left {
+.headerSub__Warpper .left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -38,16 +38,16 @@
           align-items: center;
 }
 
-.headerSubContainer .headerSubWarpper .left a {
+.headerSub__Warpper .left a {
   margin-left: 2rem;
 }
 
-.headerSubContainer .headerSubWarpper .left a .fa {
+.headerSub__Warpper .left a .fa {
   font-size: var(--d30px);
   color: var(--color-black);
 }
 
-.headerSubContainer .headerSubWarpper .center {
+.headerSub__Warpper .center {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -63,7 +63,7 @@
           align-items: center;
 }
 
-.headerSubContainer .headerSubWarpper .center .headerSubLogo {
+.headerSub__Warpper .center .headerSubLogo {
   width: 185px;
   height: 30px;
   background-image: url("../images/ohmyfood.png");
@@ -72,7 +72,7 @@
   background-size: cover;
 }
 
-.headerSubContainer .headerSubWarpper .right {
+.headerSub__Warpper .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

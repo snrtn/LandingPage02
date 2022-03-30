@@ -1,17 +1,17 @@
 @media all and (min-width: 768px) {
-  .view_contianer .view_wrapper .view_backImg {
+  .view__backImg {
     height: 700px;
   }
-  .view_contianer .view_wrapper .view_menuContainer {
+  .view__menuContainer {
     margin-top: -400px;
   }
-  .view_contianer .view_wrapper .view_menuContainer .view_info {
+  .view__info {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 2.3rem;
   }
-  .view_contianer .view_wrapper .view_menuContainer .view_itemWrapper {
+  .view__itemWrapper {
     padding: 0 1.2rem;
     width: 100%;
     height: 100%;
@@ -24,7 +24,7 @@
         flex-wrap: wrap;
     gap: 0.5rem;
   }
-  .view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item {
+  .view__item {
     margin-bottom: 1rem;
     width: 48%;
   }

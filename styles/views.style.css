@@ -1,17 +1,17 @@
-.view_contianer {
+.view {
   height: 100%;
 }
 
-.view_contianer .view_wrapper {
+.view__wrapper {
   height: inherit;
 }
 
-.view_contianer .view_wrapper .view_backImg {
+.view__backImg {
   width: 100%;
   height: 320px;
 }
 
-.view_contianer .view_wrapper .view_menuContainer {
+.view__menuContainer {
   position: relative;
   margin-top: -35px;
   border-top-left-radius: 30px;
@@ -22,7 +22,7 @@
   padding: 1rem 0;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_buttonContainer {
+.view__buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +32,7 @@
   padding: 2rem 0;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_buttonContainer .view_button {
+.view__button {
   padding: 15px 25px;
   border: none;
   outline: none;
@@ -44,14 +44,14 @@
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_buttonContainer .view_button:hover {
+.view__button:hover {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_info {
+.view__info {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,13 +63,13 @@
           align-items: center;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_info .view_title {
+.view__title {
   font-family: "Shrikhand";
   font-weight: bold;
   font-size: var(--m30px);
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_info .view_icon {
+.view__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,25 +78,25 @@
           align-items: center;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_info .view_icon .fa-heart {
+.view__icon .fa-heart {
   font-size: var(--m24px);
   font-weight: 100;
   cursor: pointer;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_info .view_icon .fa-heart:hover {
+.view__icon .fa-heart:hover {
   font-weight: 800;
   background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper {
+.view__itemWrapper {
   padding: 0 1rem;
   height: 100%;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_tite {
+.view__tite {
   font-size: var(--m14px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +113,7 @@
   margin-bottom: 1rem;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer {
+.view__itemContianer {
   cursor: pointer;
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
@@ -127,47 +127,47 @@
   overflow: hidden;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:hover {
+.view__itemContianer:hover {
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:hover .view_checkBox {
+.view__itemContianer:hover .view__checkBox {
   -webkit-animation: check 0.35s linear both;
           animation: check 0.35s linear both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:hover .view_check {
+.view__itemContianer:hover .view__check {
   -webkit-animation: checkicon 0.35s linear both;
           animation: checkicon 0.35s linear both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:nth-child(1) {
+.view__itemContianer:nth-child(1) {
   -webkit-animation: fade 1000ms ease-in-out 200ms both;
           animation: fade 1000ms ease-in-out 200ms both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:nth-child(2) {
+.view__itemContianer:nth-child(2) {
   -webkit-animation: fade 1000ms ease-in-out 400ms both;
           animation: fade 1000ms ease-in-out 400ms both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:nth-child(3) {
+.view__itemContianer:nth-child(3) {
   -webkit-animation: fade 1000ms ease-in-out 600ms both;
           animation: fade 1000ms ease-in-out 600ms both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:nth-child(4) {
+.view__itemContianer:nth-child(4) {
   -webkit-animation: fade 1000ms ease-in-out 800ms both;
           animation: fade 1000ms ease-in-out 800ms both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer:nth-child(5) {
+.view__itemContianer:nth-child(5) {
   -webkit-animation: fade 1000ms ease-in-out 1000ms both;
           animation: fade 1000ms ease-in-out 1000ms both;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_itemBox {
+.view__itemBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,13 +179,13 @@
   padding: 1rem;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_itemBox .view_itemTitle {
+.view__itemTitle {
   font-size: var(--m16px);
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_itemBox .view_itemSubContainer {
+.view__itemSubContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,14 +197,14 @@
           align-items: center;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_itemBox .view_itemSubContainer .view_itemSubTitle {
+.view__itemSubTitle {
   -webkit-box-flex: 10;
       -ms-flex: 10;
           flex: 10;
   font-size: var(--m14px);
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_itemBox .view_itemSubContainer .view_itemPrice {
+.view__itemPrice {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -213,7 +213,7 @@
   font-weight: bold;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_checkBox {
+.view__checkBox {
   position: relative;
   width: 0px;
   overflow: hidden;
@@ -230,7 +230,7 @@
   position: relative;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_checkBox .view_check {
+.view__check {
   width: 40px;
   height: 40px;
   background-color: white;
@@ -246,7 +246,7 @@
           align-items: center;
 }
 
-.view_contianer .view_wrapper .view_menuContainer .view_itemWrapper .view_item .view_itemContianer .view_checkBox .view_check .fa {
+.view__check .fa {
   font-weight: bold;
   font-size: var(--m20px);
 }

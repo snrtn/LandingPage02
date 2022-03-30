@@ -1,4 +1,4 @@
-.headerContainer {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,18 +7,18 @@
   margin-bottom: 5px;
   background-color: var(--color-white);
 
-  .headerWarpper {
+  &__Warpper {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-    .headerLogo {
-      width: 185px;
-      height: 30px;
-      background-image: url("../images/ohmyfood.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  &__Logo {
+    width: 185px;
+    height: 30px;
+    background-image: url("../images/ohmyfood.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

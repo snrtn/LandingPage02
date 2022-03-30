@@ -1,4 +1,4 @@
-.footerContainer {
+.footer {
   height: 200px;
   color: white;
   background-color: #333;
@@ -15,7 +15,7 @@
           align-items: center;
 }
 
-.footerContainer .footerWrapper {
+.footer__Wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,30 +29,30 @@
   padding-left: 10vw;
 }
 
-.footerContainer .footerTitle .footerTitleAnchor {
+.footer__TitleAnchor {
   font-family: "Shrikhand", cursive;
   color: white;
 }
 
-.footerContainer .footerItemList {
+.footer__ItemList {
   margin-top: 10px;
 }
 
-.footerContainer .footerItemList .footerItem {
+.footer__Item {
   margin-bottom: 8px;
 }
 
-.footerContainer .footerItemList .footerItem .fas {
+.footer__Item .fas {
   width: 14px;
   height: 14px;
   font-size: var(--d14px);
   margin-right: 10px;
 }
 
-.footerContainer .footerItemList .footerItem .footerItemAnchor {
+.footer__ItemAnchor {
   color: white;
 }
 
-.footerContainer .footerItemList .footerItem .footerItemEmail {
+.footer__ItemEmail {
   color: white;
 }

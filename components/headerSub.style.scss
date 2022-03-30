@@ -1,4 +1,4 @@
-.headerSubContainer {
+.headerSub {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   margin-bottom: 5px;
   background-color: var(--color-white);
 
-  .headerSubWarpper {
+  &__Warpper {
     display: flex;
     align-items: center;
     width: 100%;

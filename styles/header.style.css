@@ -1,4 +1,4 @@
-.headerContainer {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,7 +15,7 @@
   background-color: var(--color-white);
 }
 
-.headerContainer .headerWarpper {
+.header__Warpper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
           align-items: center;
 }
 
-.headerContainer .headerWarpper .headerLogo {
+.header__Logo {
   width: 185px;
   height: 30px;
   background-image: url("../images/ohmyfood.png");

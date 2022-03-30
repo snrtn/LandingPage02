@@ -1,5 +1,5 @@
 @media all and (min-width: 768px) {
-  .footerContainer {
+  .footer {
     height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8,22 +8,22 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footerContainer .footerWrapper {
+  .footer__Wrapper {
     padding-left: 0vw;
   }
-  .footerContainer .footerTitle {
+  .footer__Title {
     margin: auto;
   }
-  .footerContainer .footerItemList {
+  .footer__ItemList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 20px;
   }
-  .footerContainer .footerItemList .footerItem {
+  .footer__Item {
     margin-right: 20px;
   }
-  .footerContainer .footerItemList .footerItem .fas {
+  .footer__Item .fas {
     margin-right: 0px;
   }
 }
