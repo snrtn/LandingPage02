@@ -23,20 +23,7 @@
     padding: 2rem 0;
   }
   &__button {
-    padding: 15px 25px;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    color: var(--color-white);
-    font-size: 18px;
-    background: linear-gradient(-3deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
-
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
-
-    &:hover {
-      filter: brightness(110%);
-      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
-    }
+    @include buttonMixin;
   }
 
   &__info {
@@ -56,15 +43,7 @@
     display: flex;
     align-items: center;
     .fa-heart {
-      font-size: var(--m24px);
-      font-weight: 100;
-      cursor: pointer;
-      &:hover {
-        font-weight: 800;
-        background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+      @include heartMixin;
     }
   }
 

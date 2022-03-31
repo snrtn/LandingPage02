@@ -84,15 +84,7 @@
               display: flex;
               align-items: center;
               .fa-heart {
-                font-size: var(--m24px);
-                font-weight: 100;
-                cursor: pointer;
-                &:hover {
-                  font-weight: 800;
-                  background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                }
+                @include heartMixin;
               }
             }
           }
