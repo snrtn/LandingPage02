@@ -30,6 +30,11 @@
         &:hover {
           background-color: #f5edff;
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+          transform: scale(1.005);
+
+          &:hover .fas {
+            color: var(--color-primaire);
+          }
         }
         .functioItemNum {
           position: static;
@@ -48,6 +53,7 @@
           font-size: var(--m20px);
           margin-left: -20px;
           margin-right: 20px;
+          color: var(--color-light2black);
         }
         .functioItemTitle {
           font-size: var(--m16px);

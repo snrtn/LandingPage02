@@ -1,3 +1,17 @@
+@mixin heartMixin() {
+  font-size: var(--m24px);
+  font-weight: 100;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    font-weight: 800;
+    background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heart-beat 0.5s linear infinite;
+  }
+}
+
 .restaurantContainer {
   height: 100%;
   background-color: var(--color-moinwhite);
@@ -44,6 +58,7 @@
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
           &:hover {
             box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+            transform: scale(1.005);
           }
 
           .restaurantItemImage {
@@ -91,5 +106,17 @@
         }
       }
     }
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
   }
 }

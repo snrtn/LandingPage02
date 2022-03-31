@@ -66,6 +66,8 @@
 .restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem:hover {
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
 }
 
 .restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem .restaurantItemImage {
@@ -122,6 +124,8 @@
   font-size: var(--m24px);
   font-weight: 100;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem .restaurantItemInfo .restaurantItemHeart .fa-heart:hover {
@@ -129,4 +133,36 @@
   background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: heart-beat 0.5s linear infinite;
+          animation: heart-beat 0.5s linear infinite;
+}
+
+@-webkit-keyframes heart-beat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
 }

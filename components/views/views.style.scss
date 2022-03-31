@@ -1,3 +1,36 @@
+@mixin buttonMixin() {
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: var(--color-white);
+  font-size: 18px;
+
+  background: linear-gradient(-3deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
+
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    transform: scale(1.005);
+  }
+}
+
+@mixin heartMixin() {
+  font-size: var(--m24px);
+  font-weight: 100;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    font-weight: 800;
+    background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heart-beat 0.5s linear infinite;
+  }
+}
+
 .view {
   height: 100%;
   &__wrapper {
@@ -23,7 +56,7 @@
     padding: 2rem 0;
   }
   &__button {
-    @include buttonMixin;
+    @include buttonMixin();
   }
 
   &__info {
@@ -43,7 +76,7 @@
     display: flex;
     align-items: center;
     .fa-heart {
-      @include heartMixin;
+      @include heartMixin();
     }
   }
 
@@ -75,10 +108,10 @@
       box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
     }
     &:hover .view__checkBox {
-      animation: check 0.35s linear both;
+      width: 80px;
     }
     &:hover .view__check {
-      animation: checkicon 0.35s linear both;
+      animation: checkicon 0.4s linear both;
     }
 
     $total: 5;
@@ -124,11 +157,12 @@
     align-items: center;
     background-color: var(--color-tertiaire);
     position: relative;
+    transition: all 1s;
   }
 
   &__check {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -137,32 +171,21 @@
 
     .fa {
       font-weight: bold;
-      font-size: var(--m20px);
+      font-size: var(--m14px);
+      color: var(--color-tertiaire);
     }
-  }
-}
-
-@keyframes check {
-  0% {
-    width: 0px;
-  }
-  50% {
-    width: 40px;
-  }
-  100% {
-    width: 80px;
   }
 }
 
 @keyframes checkicon {
   0% {
-    transform: rotate(270deg);
+    transform: rotate(0deg);
   }
   50% {
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -177,5 +200,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
   }
 }
