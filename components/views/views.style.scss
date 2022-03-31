@@ -106,6 +106,7 @@
     overflow: hidden;
     &:hover {
       box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+      transform: scale(1.005);
     }
     &:hover .view__checkBox {
       width: 80px;
@@ -120,6 +121,13 @@
         animation: fade 1000ms ease-in-out (200ms * $i) both;
       }
     }
+
+    &:hover .view__itemTitle {
+      font-size: 0.938rem;
+    }
+    &:hover .view__itemSubTitle {
+      font-size: 0.813rem;
+    }
   }
 
   &__itemBox {
@@ -132,6 +140,7 @@
     font-size: var(--m16px);
     font-weight: bold;
     margin-bottom: 0.5rem;
+    transition: all 0.3s;
   }
   &__itemSubContainer {
     display: flex;
@@ -141,6 +150,7 @@
   &__itemSubTitle {
     flex: 10;
     font-size: var(--m14px);
+    transition: all 0.3s;
   }
   &__itemPrice {
     flex: 1;

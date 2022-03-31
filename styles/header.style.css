@@ -25,13 +25,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: inherit;
 }
 
 .header__Logo {
-  width: 185px;
-  height: 30px;
+  width: 200px;
+  height: 60px;
   background-image: url("../images/ohmyfood.png");
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
 }
