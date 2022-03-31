@@ -1,16 +1,16 @@
 .loding_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  animation: loader 3s forwards;
   .loding_wrapper {
-    z-index: 100;
-
-    background-color: white;
-    opacity: 1;
-    animation: loader 4.5s forwards;
-
     .loading {
       padding: 0 10px;
       position: absolute;
       height: 100vh;
-      top: 50%;
+      top: 20%;
       left: 50%;
       transform: translate(-50%, -50%);
       overflow: hidden;
@@ -22,7 +22,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        animation: dots 1.25s forwards;
+        animation: dots 1.2s infinite;
 
         &:nth-child(1) {
           background-color: #ef4c6a;
@@ -50,9 +50,9 @@
 }
 
 .views {
-  opacity: 0;
-  visibility: hidden;
-  animation: start 4s forwards;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes dots {
@@ -74,22 +74,9 @@
 
 @keyframes loader {
   0% {
-    height: 100vh;
     visibility: visible;
   }
   100% {
     visibility: hidden;
-  }
-}
-
-@keyframes start {
-  0% {
-    height: 0%;
-    visibility: hidden;
-  }
-  100% {
-    height: 100%;
-    opacity: 1;
-    visibility: visible;
   }
 }
