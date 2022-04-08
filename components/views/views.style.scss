@@ -114,19 +114,18 @@
     &:hover .view__check {
       animation: checkicon 0.4s linear both;
     }
+    &:hover .view__itemTitle {
+      font-size: 0.938rem;
+    }
+    &:hover .view__itemSubTitle {
+      font-size: 0.813rem;
+    }
 
     $total: 5;
     @for $i from 1 through $total {
       &:nth-child(#{$i}) {
         animation: fade 1000ms ease-in-out (200ms * $i) both;
       }
-    }
-
-    &:hover .view__itemTitle {
-      font-size: 0.938rem;
-    }
-    &:hover .view__itemSubTitle {
-      font-size: 0.813rem;
     }
   }
 

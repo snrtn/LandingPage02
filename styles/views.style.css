@@ -149,6 +149,14 @@
           animation: checkicon 0.4s linear both;
 }
 
+.view__itemContianer:hover .view__itemTitle {
+  font-size: 0.938rem;
+}
+
+.view__itemContianer:hover .view__itemSubTitle {
+  font-size: 0.813rem;
+}
+
 .view__itemContianer:nth-child(1) {
   -webkit-animation: fade 1000ms ease-in-out 200ms both;
           animation: fade 1000ms ease-in-out 200ms both;
@@ -172,14 +180,6 @@
 .view__itemContianer:nth-child(5) {
   -webkit-animation: fade 1000ms ease-in-out 1000ms both;
           animation: fade 1000ms ease-in-out 1000ms both;
-}
-
-.view__itemContianer:hover .view__itemTitle {
-  font-size: 0.938rem;
-}
-
-.view__itemContianer:hover .view__itemSubTitle {
-  font-size: 0.813rem;
 }
 
 .view__itemBox {
