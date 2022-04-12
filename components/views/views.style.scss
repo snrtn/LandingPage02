@@ -73,7 +73,7 @@
   &__icon {
     display: flex;
     align-items: center;
-    .fa-heart {
+    .fas {
       @include heartMixin();
     }
   }

@@ -80,13 +80,13 @@
           align-items: center;
 }
 
-.view__icon .fa-heart {
+.view__icon .fas {
   font-size: var(--m24px);
   font-weight: 100;
   cursor: pointer;
 }
 
-.view__icon .fa-heart:hover {
+.view__icon .fas:hover {
   font-weight: 800;
   background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
   -webkit-background-clip: text;
