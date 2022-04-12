@@ -93,8 +93,6 @@
   background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: heart-beat 0.5s linear infinite;
-          animation: heart-beat 0.5s linear infinite;
 }
 
 .view__itemWrapper {
@@ -328,35 +326,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes heart-beat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-}
-
-@keyframes heart-beat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
   }
 }
