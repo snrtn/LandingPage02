@@ -120,7 +120,7 @@
           align-items: center;
 }
 
-.restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem .restaurantItemInfo .restaurantItemHeart .fa-heart {
+.restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem .restaurantItemInfo .restaurantItemHeart .fas {
   font-size: var(--m24px);
   font-weight: 100;
   cursor: pointer;
@@ -128,7 +128,7 @@
   transition: all 0.2s;
 }
 
-.restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem .restaurantItemInfo .restaurantItemHeart .fa-heart:hover {
+.restaurantContainer .restaurantWrapper .restaurantItemContainer a .restaurantItem .restaurantItemInfo .restaurantItemHeart .fas:hover {
   font-weight: 800;
   background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
   -webkit-background-clip: text;

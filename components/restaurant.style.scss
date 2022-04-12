@@ -8,7 +8,6 @@
     background: linear-gradient(205deg, var(--color-primaire) 20%, var(--color-secondaire) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    // animation: heart-beat 0.5s linear infinite;
   }
 }
 
@@ -98,7 +97,7 @@
             .restaurantItemHeart {
               display: flex;
               align-items: center;
-              .fa-heart {
+              .fas {
                 @include heartMixin;
               }
             }
@@ -108,15 +107,3 @@
     }
   }
 }
-
-// @keyframes heart-beat {
-//   0% {
-//     transform: scale(1);
-//   }
-//   50% {
-//     transform: scale(1.05);
-//   }
-//   100% {
-//     transform: scale(0.95);
-//   }
-// }

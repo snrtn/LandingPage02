@@ -84,8 +84,6 @@
   font-size: var(--m24px);
   font-weight: 100;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 .view__icon .fa-heart:hover {
