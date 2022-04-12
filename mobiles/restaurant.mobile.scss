@@ -7,10 +7,11 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 10px;
         .restaurantItem {
           display: flex;
-          width: 300px;
+          width: 500px;
+          height: 400px;
         }
       }
     }
@@ -21,10 +22,11 @@
   .restaurantContainer {
     .restaurantWrapper {
       .restaurantItemContainer {
-        gap: 5px;
+        gap: 10px;
         a {
           .restaurantItem {
-            width: 350px;
+            width: 520px;
+            height: 400px;
           }
         }
       }
@@ -52,10 +54,10 @@
   .restaurantContainer {
     .restaurantWrapper {
       .restaurantItemContainer {
-        gap: 20px;
+        gap: 10px;
         a {
           .restaurantItem {
-            width: 620px;
+            width: 600px;
             height: 400px;
           }
         }
